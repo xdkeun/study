@@ -1,0 +1,67 @@
+body {
+    margin:0;
+    font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', sans-serif;
+    background-color: #485861;
+    color:#ffe6cf;
+    font-size:11px;
+    line-height:1.4;
+    font-weight:500;
+}
+
+.text-area {
+    margin-top:90px;
+    margin-left:24px;
+}
+
+.text-area h1 {
+    font-size:30px;
+    line-height:1;
+    font-weight:normal;
+}
+
+.volume {
+    margin-bottom:85px;
+}
+
+#circle-wrapper {
+
+}
+
+.circle {
+    width:246px;
+    height:246px;
+    border-radius:50%;
+}
+
+.circle:first-child {
+    background-color: transparent; /*투명하게*/
+    border:1px solid black;
+    opacity:0.2; /*opacity는 0.0~1.0의 값을 입력  0.2 = 20%*/
+    box-sizing:border-box;
+}
+
+.circle:nth-child(2) {
+    background-color: #ffc000;
+}
+
+.circle:last-child {
+    background-color: #fedd15;
+}
+
+#badge {
+    background-color: #ffc000;
+    width:56px;
+    height:56px;
+    color:#485861;
+    margin-left:24px;
+    padding-left:13px;
+    padding-top:10px;
+    /* margin : 상대적인 거리를 늘리는 것
+    padding : 자신의 살을 찌우는 것 */
+    font-size:9px;
+    line-height:11px;
+    box-sizing: border-box; /*박스의 크기를 테두리(border)를 기준으로 크기를 정함*/
+}
+
