@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            /* position:relative; */
+        }
+
+        #two {
+            position: absolute;
+            background-color: blue;
+            left: 12px;
+            top: 24px;
+        }
+
+        #wrapper {
+            margin-left: 100px;
+            position: relative;
+            height: auto;
+            border: 10px solid green;
+        }
+
+        /* relative - 부모
+        absolute - 자식
+        fixed - 유지 */
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="one">1</div>
+        <div id="two">2</div>
+        <div id="three">3</div>
+    </div>
+
+</body>
+
+</html>
