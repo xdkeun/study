@@ -31,7 +31,7 @@ sup {
     /*줄바꿈을 하지 않겠다는 의미, 크기가 넘쳐도 줄바꿈을 하지 않고 그냥 짤려서 나옴*/
     overflow-x: scroll;
     padding: 24px;
-    padding-bottom:7px;
+    padding-bottom: 7px;
 }
 
 .swiper li {
@@ -63,8 +63,10 @@ sup {
 .item {
     padding: 17px 24px 20px;
     /* 3개 - 위 오른쪽왼쪽 아래 */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    /*opacity 0.08(8%) 적용된것이랑 같은 의미*/
+    display: flex;
     position: relative;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08); /*opacity 0.08(8%) 적용된것이랑 같은 의미*/
 }
 
 .item .num {
@@ -75,21 +77,10 @@ sup {
     border-radius: 50%;
     padding: 5px 10px;
     box-sizing: border-box;
-    display: inline-block;
-    margin-right: 20px;
-    position: absolute;
-    top: 50%;
-    margin-top: -13px;
-    /*height의 절반만큼 넣어주면 세로축 중앙정렬됨*/
-    /* position:relative;
-    top:-14px;
-    left:10px; */
 }
 
 .item .infos {
-    display: inline-block;
-    width: 80%;
-    margin-left: 36px;
+    margin-left: 10px;
 }
 
 .item .title {
@@ -99,4 +90,23 @@ sup {
 .item .desc {
     font-size: 13px;
     opacity: 0.7;
+}
+
+.item:after {
+    /*pseudo element*/
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.2s;
+}
+
+.item:hover:after {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.item:active:after {
+    background-color: rgba(0, 0, 0, 0.2);
 }
