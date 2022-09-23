@@ -3,8 +3,21 @@
     position: relative;
 }
 
-.search input {
+.search form{
+    display:flex;
+}
+
+.search form:hover .search-icon{ /*.search form이 hover되면 .search-icon에 css를 주는 것*/
+    opacity:1;
+}
+
+.search .search-field {
     width: 100%;
+}
+
+.search .cancel-btn{
+    flex-shrink:0; /*자동으로 아이템이 축소되는 것을 방지해줌*/
+    margin-left:20px;
 }
 
 .search-icon {
