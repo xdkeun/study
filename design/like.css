@@ -13,6 +13,13 @@
 
 .search .search-field {
     width: 100%;
+    flex-shrink: 0;
+    transition:0.3s;
+}
+
+.search .search-field:focus{
+    width:100%;
+    flex-shrink: initial;
 }
 
 .search .cancel-btn{
@@ -26,6 +33,7 @@
     top:12px;
     opacity: 0.3;
 }
+
 
 .text-area {
     margin: 24px;

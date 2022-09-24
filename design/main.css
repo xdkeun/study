@@ -20,6 +20,14 @@ h1 {
     font-weight: normal;
 }
 
+h2 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 400;
+
+}
+
 p {
     margin: 0;
 }
@@ -58,6 +66,11 @@ button {
     background-color: transparent;
     border: none;
     outline: none;
-    color:#ffe6cf;
-    font-size:15px;
+    color: #ffe6cf;
+    font-size: 15px;
+}
+
+a {
+    color: #ffe6cf;
+    text-decoration: none;
 }
