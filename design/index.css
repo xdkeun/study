@@ -1,3 +1,15 @@
+@keyframes circleShow {
+    from {
+        transform: translateX(-86px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .text-area {
     margin-top: 90px;
     margin-left: 24px;
@@ -5,6 +17,13 @@
 
 .text-area h1 {
     margin-bottom: 22px;
+    animation:showText 0.35s;
+}
+
+.desc{
+    animation:showText 0.35s;
+    animation-delay:0.2s;
+    animation-fill-mode:both;
 }
 
 .line {
@@ -32,20 +51,23 @@
     height: 246px;
     border-radius: 50%;
     position: absolute;
+    animation: circleShow 2s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: both;
 }
 
 .circle:first-child {
     background-color: transparent;
     /*투명하게*/
-    border: 5px solid black;
-    opacity: 0.2;
-    /*opacity는 0.0~1.0의 값을 입력  0.2 = 20%*/
+    border: 5px solid rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
+    animation-delay: 0.5s;
 }
 
 .circle:nth-child(2) {
     background-color: #ffc000;
     left: 100px;
+    animation-delay: 1s;
 }
 
 .circle:last-child {
@@ -53,6 +75,7 @@
     left: 200px;
     transition: 1s;
     top: 0;
+    animation-delay: 1.5s;
 }
 
 .circle:last-child:hover {
@@ -83,4 +106,7 @@
     top: 0;
     right: 24px;
     font-weight: bold;
+    animation:slideDown 0.5s;
+    animation-fill-mode:both;
+    animation-delay:0.5s;
 }

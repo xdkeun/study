@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="animation.css">
     <title>Document</title>
+    <style>
+        @keyframes show {
+            0% {
+                background-color: red;
+                /* opacity: 0; */
+                transform: translateX(0);
+            }
+
+            50%{
+                background-color: aqua;
+                transform:scale(2);
+            }
+
+            100% {
+                background-color: blue;
+                opacity: 1;
+                transform: translateX(100px);
+            }
+        }
+
+        #parent {
+            perspective: 200px;
+        }
+
+        #element {
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            animation: show 1s both;
+            animation-delay: 1s;
+            /* animation-timing-function: ease-out; 보통 - 천천히 */
+            /* animation-timing-function: ease-in-out; 천천히 - 보통 - 천천히 */
+            /* https://cubic-bezier.com/#.17,.67,.83,.67 */
+            animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+            /* 애니메이션아 무한 반복 */
+            animation-iteration-count: infinite;
+            /* 애니메이션이 거꾸로 적용 */
+            animation-direction: reverse;
+            /* 왔다리 갔다리 함 */
+            animation-direction: alternate;
+            /* transition: 1s; */
+        }
+
+        #element:hover {
+            /* transform: translate3d(30px, 0, 50px); */
+            /* transform:skewY(20deg); */
+        }
+    </style>
 </head>
+
 <body>
-    <div id="element"></div>
+    <div class="parent">
+        <div id="element"></div>
+    </div>
 </body>
+
 </html>
