@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+    <style>
+        body{
+            padding:24px;
+        }
+        header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            padding:24px;
+            box-sizing:border-box;
+            background-color: #485861;
+        }
+        .text-area {}
+
+
+        sup {
+            font-size: 10px;
+        }
+
+        .content {
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        .line {
+            width: 30px;
+            height: 1px;
+            border-bottom: 1px solid #ffe6cf;
+            margin: 32px 0;
+            opacity: 0.3;
+        }
+        .text-area{
+            margin-top:130px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="issue.html"><img src="img/icon/arrow-back.svg"></a>
+        <img src="img/icon/like.svg">
+    </header>
+    <div class="text-area">
+        <h1 class="title">Issues <sup>1</sup></h1>
+        <!--sup - 위첨자-->
+        <p>we`ll make a mobile magazine<br>
+            using html, css only</p>
+    </div>
+    <div class="line"></div>
+    <p class="content">Blah Blah</p>
+
+    <nav class="gnb">
+        <!-- global navigation bar-->
+        <a href="index.html" class="cover" class="mouse-effect">
+            <img src="img/icon/cover.svg">
+        </a>
+        <a href="issue.html" class="issue">
+            <img src="img/icon/issue.svg">
+        </a>
+        <a href="like.html" class="like">
+            <img src="img/icon/like.svg">
+        </a>
+        <a href="my.html" class="my">
+            <img src="img/icon/more.svg">
+        </a>
+    </nav>
+</body>
+
+</html>
