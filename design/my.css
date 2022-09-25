@@ -83,26 +83,3 @@ header .mail {
 .list .item .right img {
     padding-right: 14px;
 }
-
-.mouse-effect {
-    position: relative;
-}
-
-.mouse-effect:after {
-    content: "";
-    background-color: rgba(0, 0, 0, 0.08);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    transition: 0.2s;
-}
-
-.mouse-effect:hover:after {
-    background-color: rgba(0, 0, 0, 0.08);
-}
-
-.mouse-effect:active:after {
-    background-color: rgba(0, 0, 0, 0.12);
-}
