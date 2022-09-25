@@ -33,7 +33,7 @@
 .modal-inner .thumb{
     height:234px;
     background-color:aliceblue;
-    background-image: url("image.png");
+    background-image: url("img/user-thumb.png");
     background-size:cover;
     background-position:center;
 }
