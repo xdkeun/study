@@ -1,0 +1,73 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  background-color: white;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-logo {
+  width: 110px;
+  height: auto;
+}
+
+.header-menu {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.header-menu .header-menu-beta {
+  font-size: 12px;
+  font-weight: 400;
+  background-color:#74b9ff;
+  color:white;
+  padding:3px;
+  position: relative;
+  left:1px;
+  bottom:3px;
+}
+
+.header-search {
+  background-color:#f5f5f5;
+  padding:6px;
+  padding-left:10px;
+  width:300px;
+  height:35px;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-search-icon {
+  opacity: 0.5;
+  font-size: 16px;
+  margin-right:10px;
+}
+
+.header-search-input {
+  all:unset;
+  font-size: 16px;
+}
+
+.header-right {
+  color:gray;
+}
+
+.header-menu:last-child {
+  margin-right:30px;
+}
+
+.header-menu:hover{
+  color:tomato;
+}
+
+.header-right .header-menu i:hover {
+  background-color:darkgray;
+  padding:5px;
+  border-radius:50%;
+}
