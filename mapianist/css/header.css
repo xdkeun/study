@@ -58,6 +58,10 @@ header ul {
   color:gray;
 }
 
+.header-menu {
+  font-size:18px;
+}
+
 .header-menu:last-child {
   margin-right:30px;
 }
