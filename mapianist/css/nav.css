@@ -21,13 +21,13 @@ nav {
   align-items: center;
 }
 
-.nav-list-wrapper .nav-list:first-child{
+.nav-list-wrapper .nav-list:first-child {
   background-color: tomato;
 }
 
 .nav-list-wrapper .nav-list img {
-  height:90%;
-  width:auto;
+  height: 90%;
+  width: auto;
   border-radius: 50%;
   margin: 0 8px;
 }
