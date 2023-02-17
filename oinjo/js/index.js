@@ -16,3 +16,12 @@ const $bottomBtn = document.querySelector(".move-bottom-btn");
 $bottomBtn.onclick = () => {
   window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
 };
+
+
+const redColor = document.querySelectorAll(".red-color");
+const articleProductImage = document.querySelectorAll(".article-product-image");
+for(let i=0; i<redColor.length; i++){
+redColor[i].addEventListener("click", () => {
+  articleProductImage[i].src = `images/kakao.png`;
+});
+}
