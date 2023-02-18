@@ -1,0 +1,132 @@
+/* 재활용 코드, wrapper, top, title, more-button */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15%;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.more-button {
+  font-size: 14px;
+  color: darkgray;
+}
+
+/* 인기 악보 */
+.popular-sheet-music-sort-button {
+  border-bottom: 1px solid darkgray;
+}
+
+.sort-button {
+  all: unset;
+  color: darkgray;
+}
+
+.weekly {
+  margin-right: 10px;
+}
+
+.popular-sheet-music-line {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.popular-sheet-music {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid darkgray;
+  flex-basis: 48%;
+}
+
+.music-ranking {
+  padding-left: 10px;
+  flex-basis: 5%;
+}
+
+.music-updown-button {
+  flex-basis: 10%;
+}
+
+.music-image {
+  flex-basis: 10%;
+}
+
+.music-image img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.music-content {
+  flex-basis: 60%;
+}
+
+.music-detail {
+  font-size: 14px;
+  color: darkgray;
+}
+
+.music-price {
+  flex-basis: 15%;
+  color: darkgray;
+}
+
+.sort-button:focus {
+  color: black;
+  font-weight: 600;
+  border-bottom: 3px solid orange;
+}
+
+/* 큐레이션 */
+.curation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.album-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  height: 274px;
+  position: relative;
+}
+
+.album-image {
+  width: 100%;
+  height: 172px;
+  border-radius: 5%;
+}
+
+.album-count {
+  position: absolute;
+  color:white;
+  background-color:rgba(0, 0, 0, 0.6);
+  padding:5px;
+  top:135px;
+  right:10px;
+}
+
+.album-title {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.album-date,
+.album-views {
+  color: darkgray;
+  font-size: 14px;
+}
+
+.album-wrapper:hover .album-image{
+  transform:scale(1.2);
+  overflow:hidden;
+}
