@@ -1,6 +1,6 @@
 body {
   display: flex;
-  height:1024px;
+  height: 1024px;
   justify-content: center;
   align-items: center;
   background-color: #d9d9d9;
@@ -9,7 +9,7 @@ body {
 .withdrawal {
   background-color: white;
   width: 700px;
-  height:100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -40,7 +40,7 @@ body {
 }
 
 .notice-title {
-  color:tomato;
+  color: tomato;
   font-weight: 600;
   font-size: 20px;
   padding: 5px;
@@ -94,51 +94,52 @@ body {
 }
 
 .user-info-check {
-  padding:10px;
-  border-bottom:1px solid black;
-  margin-bottom:10px;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
 }
 
 .user-info-check-title {
-  color:tomato;
+  color: tomato;
   font-size: 20px;
   padding: 10px 0;
   font-weight: 600;
 }
 
 .user-info-check-title i {
-  margin-right:5px;
+  margin-right: 5px;
 }
 
 .id-check {
-  padding-bottom:10px;
-}
-.pw-check {
-  display:flex;
+  padding-bottom: 10px;
 }
 
-.pw-check input{
-  all:unset;
+.pw-check {
+  display: flex;
+}
+
+.pw-check input {
+  all: unset;
   /* border-right:1px solid black; */
-  margin-right:5px;
+  margin-right: 5px;
 }
 
 .pw-check-icon {
-  color:red;
+  color: red;
 }
 
 .withdrawal-button-wrapper {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .withdrawal-button {
-  width:200px;
-  height:60px;
-  font-size:20px;
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
   font-weight: 600;
-  color:white;
+  color: white;
   background-color: #545151;
-  border:0px;
+  border: 0px;
 }

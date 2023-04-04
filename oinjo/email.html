@@ -37,8 +37,8 @@
 
         // 이메일 인증번호
         document.querySelector(".number-submit").addEventListener("click", () => {
-            fetch("https://codingapple1.github.io/userdata.json", {
-                method: "GET",
+            fetch("login/mailConfirm", {
+                method: "POST",
                 data : {
                     "email" : emailInput.value //email이라는 이름으로 사용자의 이메일을 보냄
                 },

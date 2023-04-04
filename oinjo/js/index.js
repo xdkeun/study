@@ -17,11 +17,19 @@ $bottomBtn.onclick = () => {
   window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
 };
 
-
 const redColor = document.querySelectorAll(".red-color");
 const articleProductImage = document.querySelectorAll(".article-product-image");
-for(let i=0; i<redColor.length; i++){
-redColor[i].addEventListener("click", () => {
-  articleProductImage[i].src = `images/kakao.png`;
-});
+for (let i = 0; i < redColor.length; i++) {
+  redColor[i].addEventListener("click", () => {
+    articleProductImage[i].src = `images/kakao.png`;
+  });
 }
+
+// inputSearch가 focus되면 Search라는 placeholder가 사라지도록 구현
+const inputSearch = document.querySelector(".input-search");
+inputSearch.addEventListener("focus", () => {
+  inputSearch.placeholder = "";
+});
+inputSearch.addEventListener("blur", () => {
+  inputSearch.placeholder = "Search";
+});
