@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <base href="/" /> -->
+    <!-- <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"> -->
+    <!-- <meta http-equiv="Pragma" content="no-cache"> -->
+    <!-- <meta http-equiv="Expires" content="0"> -->
+    <title></title>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+<script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/prop-types@15.7.2/prop-types.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel"> // JSX문법을 JS로 변환하기위해 babel을 이용
+    const root = document.querySelector("#root");
+    function Btn({text, changeValue, fontSize}) { //function Btn(props) { 로 적고 (shortcut) : 오브젝트 미리 꺼내는 거 text라는 오브젝트 미리 꺼냄
+        console.log(text, "was rendered");
+        return <button
+        onClick={changeValue}
+        style={{
+            backgroundColor : "tomato",
+            color:"white",
+            padding:"10px 20px",
+            border:0,
+            borderRadius:10,
+            margin:"2px",
+            fontSize:fontSize,
+        }}>{text}</button> // }}>{props.text}</button>으로 적어도 동일한 효과
+        
+    }
+    const MemorizedBtn = React.memo(Btn);
+    Btn.propTypes = {
+        text: PropTypes.string.isRequired,
+        fontSize: PropTypes.number,
+    }
+    function App(){
+        const [value, setValue] = React.useState("Save Changes");
+        const changeValue = (event) => {
+            setValue("Rivert Changes");
+        }
+        return (<div>
+            <h1 className="hi">Props</h1>
+            <MemorizedBtn text={value} changeValue={changeValue} fontSize={24} />
+            <MemorizedBtn text="Continue" /> 
+        </div>
+        );
+    }
+    ReactDOM.render(<App />, root);
+</script>
+</html>

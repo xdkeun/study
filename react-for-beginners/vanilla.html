@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <base href="/" /> -->
+    <!-- <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"> -->
+    <!-- <meta http-equiv="Pragma" content="no-cache"> -->
+    <!-- <meta http-equiv="Expires" content="0"> -->
+    <title></title>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+<script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel"> // JSX문법을 JS로 변환하기위해 babel을 이용
+    const root = document.querySelector("#root");
+    const Title = () => (<h3 id="title" // Arrow Function, Component는 대문자로 시작
+    onMouseEnter={() => console.log("mouse enter")}>hello i`m a title</h3>
+    );
+    const Button = () => (<button onClick={() => console.log("clicked")}
+        style={{backgroundColor: "tomato",}}>Click Me</button>);
+    const Container = () => (<div>
+        <Title />
+        <Button />
+        </div>);
+    ReactDOM.render(<Container />, root);
+</script>
+</html>
