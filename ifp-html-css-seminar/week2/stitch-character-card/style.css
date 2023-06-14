@@ -1,0 +1,118 @@
+body {
+    /* 스크롤 없이 만들고 싶을때 아래 3줄 */
+    width:100vw; /* view width */
+    height: 100vh; /* view height */
+    margin: 0;
+    background-color: rgb(180, 180, 180);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dongle', sans-serif;
+    font-size: 27px;
+}
+
+article {
+    margin-top: 100px;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    /* margin: 4px; */
+}
+
+.stitch1 {
+    border: 10px solid skyblue;
+}
+
+.stitch2 {
+    border: 10px solid royalblue;
+}
+
+.stitch3 {
+    border: 10px solid turquoise;
+}
+
+section {
+    height: 320px;
+    padding: 0 10px; /* 상하 좌우 */
+    /* 2개 : 상하, 좌우 */
+    /* 3개 상, 좌우, 하 */
+    /* 4개 상, 우, 하, 좌 */
+}
+
+img {
+    width:200px;
+    height:180px;
+}
+
+.stitch1 img {
+    margin-top: -160px;
+    margin-left: -100px;
+}
+
+.stitch2 img {
+    margin-top: -160px;
+}
+
+.stitch3 img {
+    margin-top: -160px;
+    margin-right: -100px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    font-size:27px;
+}
+
+footer {
+    width: 100%; /* 부모만큼 너비를 차지함 */
+    height: 80px;
+    background-color: aliceblue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stitch1 a {
+    text-decoration: none;
+    background-color: blanchedalmond;
+    padding: 4px;
+    border-radius: 25%;
+    color: black;
+}
+
+.stitch2 a {
+    text-decoration: none;
+    background-color: rgb(224, 175, 102);
+    padding: 4px;
+    border-radius: 25%;
+    color: black;
+}
+
+.stitch3 a {
+    text-decoration: none;
+    background-color: rgb(216, 156, 66);
+    padding: 4px;
+    border-radius: 25%;
+    color: black;
+}
+
+.stitch1 a:active,
+.stitch2 a:active,
+.stitch3 a:active {
+    margin-bottom: -5px;
+    border-bottom: none;
+}
+
+.stitch2 {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+a:hover{
+    font-size:35px;
+}

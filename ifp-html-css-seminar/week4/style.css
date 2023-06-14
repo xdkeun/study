@@ -1,0 +1,94 @@
+* {
+    margin:0;
+    padding:0;
+}
+li {
+    list-style:none;
+    background-image: url("images/icon-jack2.png");
+    background-repeat: no-repeat;
+    padding: 10px 43px 8px; 
+    /* 위 좌우 아래 */
+}
+
+li:hover {
+    background-image: url("images/icon-jack.png")
+}
+
+body{
+    background-image: url(images/halloween-background.gif);
+    background-position:center;
+    background-color: #666;
+    display:flex;
+    justify-content: center;
+}
+
+.wrapper {
+    background-color: #ddd;
+    width: 800px;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.header {
+    background-attachment: fixed;
+    background-size: cover;
+    /* contain도 있음 mdn 참고 */
+    background-image: url(images/halloween-header-bg.png);
+    color:white;
+    height:400px;
+    text-align:center;
+}
+
+.header .profile {
+    margin-top:50px;
+}
+
+.header h1{
+    color: violet;
+}
+
+.header p{
+    background-color:black;
+    color: #888;
+    width:400px;
+    margin:5px auto;
+    padding: 10px;
+}
+
+.contents {
+    margin:20px;
+    display:flex;
+    flex-direction: column;
+}
+
+.contents h2{
+    color:darkorange;
+}
+
+.section {
+    height:200px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:20px;
+    padding:20px;
+    background-color: white;
+    background-image: url(images/icon-information.png);
+    background-repeat: no-repeat;
+    background-position:right 20px center;
+}
+
+.skills {
+    background-image: url(images/icon-skills.png);
+}
+
+.footer {
+    color:blueviolet;
+    background-color: black;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

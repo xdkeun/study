@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+body {
+    width:100vw;
+    height:100vh;
+    margin:0;
+    background:url('images/image.png') no-repeat center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color: lightblue;
+    font-family: 'DynaPuff', cursive;
+    font-weight:400;
+}
+
+.login_form{
+    width:300px;
+    height:400px;
+    padding:20px 30px;
+    background:url('images/image.png') no-repeat center/cover;
+    background-size:1650px;
+    box-shadow:rgba(0, 0, 0, 0.6) 0px 19px 38px;    
+}
+
+.login_form__header {
+    margin:10px 0 40px;
+    font-size:20px;
+    font-weight:600;
+}
+
+.login_form span:hover{
+    padding-bottom:5px;
+    border-bottom: 4px solid paleturquoise;
+    cursor:pointer;
+}
+
+.login_form__header span:first-child{
+    margin-right:30px;
+}
+
+form {
+    width:100%;
+    height:300px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+}
+
+input {
+    color:rgb(106, 106, 106);
+}
+
+input::placeholder {
+    color:rgb(73, 73, 73);
+}
+
+input:focus{
+    outline:none;
+}
+
+form > input:not(input[type='submit']){ /*submit를 제외한 나머지 input
+    인데 checkbox는 포함안됨 이유는 form의 자식중에 지정되도록 했기 때문*/
+    width:100%;
+    height:30px;
+    border:none;
+    border-bottom:4px solid rgba(33, 33, 189, 0.653);
+    background-color:transparent; /*투명하게 만들기*/
+    font-size:20px;
+}
+
+.checkbox{
+    width:100%;
+}
+
+input[type='checkbox'],
+label {
+    cursor:pointer;
+}
+
+input[type='submit'] {
+    width:150px;
+    height:30px;
+    padding-top:2px;
+    border:none;
+    background-color:rgb(33, 33, 189);
+    border-radius: 20px;
+    color:white;
+    cursor:pointer;
+    font-family: 'DynaPuff', cursive;
+    font-weight:400;
+}
+
+input{
+    font-family: 'DynaPuff', cursive;
+}

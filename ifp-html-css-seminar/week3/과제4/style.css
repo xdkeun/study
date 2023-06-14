@@ -1,0 +1,80 @@
+body {
+    margin:0px;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: darkgray;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+article {
+    width: 900px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.flip {
+    width:250px;
+    height:300px;
+    margin:12px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.card {
+    width: 100%; 
+    height: 100%; 
+    transition: 2s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20%;
+}
+
+.back {
+    transform: rotateY(180deg);
+    cursor:pointer; /*마우스 커서를 갖다대면 마우스 손 모양이 변함*/
+}
+
+.flip:hover .card{
+    transform: rotateY(180deg);
+}
+
+.first-card {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.second-card {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.third-card {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.fourth-card {
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+
+.fifth-card {
+    background-color: #FFFFFF;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+}
+
+.sixth-card {
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+}

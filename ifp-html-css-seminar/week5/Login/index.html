@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login_form">
+        <div class="login_form__header">
+            <span class="menu">SIGN IN</span>
+            <span class="menu">SIGN UP</span>
+        </div>
+        <form action="#" method="get"> 
+            <!-- action : 어디로 보낼지 정하는 것
+            get은 url이 변경, 사용자의 정보가 노출되므로 post로 보내야 함 -->
+            <input type="text" name="user_name" placeholder="UserName">
+            <input type="email" name="user_email" placeholder="Email ID">
+            <input type="password" name="user_password" placeholder="Password">
+            <div class="checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox">I agree to terms and conditions</label>
+                <!-- input checkbox의 id와 label의 for값을 같게 하므로 
+                label을 클릭해도 checkbox가 check되도록 할 수 있다 -->
+            </div>
+            <input type="submit" value="REGISTER">
+        </form>
+    </div>
+</body>
+</html>
